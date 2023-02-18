@@ -49,6 +49,11 @@
   font-size: var(--XL);
 }
 /* Select Client / Masterclass */
+.label-users{
+  width: 100%;
+  text-align: center;
+}
+
 .btn-red {
   font-family: "VarelaRound", sans-serif;
   border: none;
@@ -211,6 +216,11 @@
   width: 100%;
   margin-bottom: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.label-edit-masterclass{
+  width: 80%;
+  text-align: center;
 }
 
 .selectmaster {

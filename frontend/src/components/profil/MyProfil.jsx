@@ -13,7 +13,7 @@ export default function MyProfil() {
   };
 
   return (
-    <div className="my-profil">
+    <section className="my-profil">
       <img
         className="logo-profile"
         src={ProfilePic}
@@ -63,6 +63,6 @@ export default function MyProfil() {
         </button>
       </div>
       {editProfil ? <EditProfil /> : ""}
-    </div>
+    </section>
   );
 }

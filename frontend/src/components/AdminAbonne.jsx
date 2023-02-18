@@ -56,20 +56,24 @@ export default function AdminAbonne({ users, professionals }) {
         </div>
         {selectUsers && (
           <div className="abonnes">
-            <select
-              name="showUsers"
-              className="choose-clients"
-              placeholder="Selection Abonné"
-              onChange={handleFilter}
-            >
-              {" "}
-              <option value="">Liste des Utilisateurs</option>
-              {users.map((user) => (
-                <option value={user.lastname} key={user.Id}>
-                  {user.Id} - {user.lastname} {user.firstname}
-                </option>
-              ))}
-            </select>
+            <label className="label-users" htmlFor="users">
+              <select
+                id="users"
+                name="showUsers"
+                className="choose-clients"
+                placeholder="Selection Abonné"
+                onChange={handleFilter}
+              >
+                {" "}
+                <option value="">Liste des Utilisateurs</option>
+                {users.map((user) => (
+                  <option value={user.lastname} key={user.Id}>
+                    {user.Id} - {user.lastname} {user.firstname}
+                  </option>
+                ))}
+              </select>
+            </label>
+
             {users
               .filter((filtered) => filtered.lastname === filterUsers)
               .map((elem) => (

@@ -46,6 +46,10 @@
   margin-bottom: 0.5em;
 }
 
+.label-faq{
+  text-align: center;
+}
+
 .selectQuestions {
   background-color: rgba(245, 207, 206);
   border: none;

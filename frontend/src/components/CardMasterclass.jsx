@@ -19,7 +19,7 @@ export default function CardMasterclass({ mastercard }) {
     <div className="card-container">
       <div className="contenu-card">
         <div className="pPresEntreprise">
-          <p className="pCardNameEntreprise">{mastercard.entreprise.name}</p>
+          <h2 className="pCardNameEntreprise">{mastercard.entreprise.name}</h2>
           <p className="pCardSpecialityEntreprise">
             ( {mastercard.entreprise.speciality} )
           </p>
@@ -29,12 +29,12 @@ export default function CardMasterclass({ mastercard }) {
           src={`${import.meta.env.VITE_BACKEND_URL}/data/uploads/${
             mastercard.entreprise.logo_name
           }`}
-          alt="logo entreprise"
+          alt={mastercard.entreprise.name}
           className="logo2"
         />
       </div>
       <div className="title-desc">
-        <h2 className="title-card">{mastercard.title}</h2>
+        <h3 className="title-card">{mastercard.title}</h3>
         <p className="overflow-ellipsis">{mastercard.description}</p>
       </div>
       <div className="button-start">

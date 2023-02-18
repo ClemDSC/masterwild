@@ -101,14 +101,16 @@ export default function Connexion() {
     <div>
       <div className="introSeConnecter">
         <h2 className="titleConnexion">
-          <p>
-            <span className="accent">C</span>onnexion
-          </p>
+          <span className="accent">C</span>onnexion
         </h2>
       </div>
       <div className="pageCo">
         <div className="divPicConnexionbis">
-          <img className="logoWild" src={Login} alt="logo wild code school" />
+          <img
+            className="logoWild"
+            src={Login}
+            alt="wild code school logo red"
+          />
         </div>
         <Formik
           initialValues={initialValues}

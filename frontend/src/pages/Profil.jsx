@@ -33,18 +33,18 @@ export default function Profil({ isOnline }) {
           onClick={mcFavoriteChange}
           className={`ongletLeft ${selectOnglet ? "ongletLeftActive" : ""}`}
         >
-          <p>
+          <h2>
             Mes <span className="accent">F</span>avoris
-          </p>
+          </h2>
         </button>
         <button
           type="button"
           onClick={profilChange}
           className={`ongletRight ${!selectOnglet ? "ongletRightActive" : ""}`}
         >
-          <p>
+          <h2>
             Mon <span className="accent">P</span>rofil
-          </p>
+          </h2>
         </button>
       </div>
 

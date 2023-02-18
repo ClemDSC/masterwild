@@ -37,7 +37,7 @@ export default function FormContact() {
   const ToastExcel = () => toast.success("Demande bien envoyée !");
 
   return (
-    <div className="divFormContact">
+    <section className="divFormContact">
       <div className="sep"> </div>
       <div className="askContact">
         <p className="pAsk">
@@ -106,6 +106,6 @@ export default function FormContact() {
           pauseOnHover
         />
       </form>
-    </div>
+    </section>
   );
 }

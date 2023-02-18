@@ -101,7 +101,7 @@ export default function Search({ isOnline }) {
             <img src={LogoSearch} alt="search" className="logo-search" />
           </button>
         </div>
-        <div className="search-theme">
+        <section className="search-theme">
           <button
             className="btnSearchTheme"
             type="button"
@@ -147,9 +147,9 @@ export default function Search({ isOnline }) {
               </ul>
             </div>
           )}
-        </div>
+        </section>
 
-        <div className="search-metier">
+        <section className="search-metier">
           <button
             className={showEntreprise ? "btnSearchMetier" : "btnsearchmetier"}
             type="button"
@@ -195,9 +195,9 @@ export default function Search({ isOnline }) {
               </ul>
             </div>
           )}
-        </div>
+        </section>
       </section>
-      <div className="res-search">
+      <section className="res-search">
         <ul className="result-mastersearch">
           {listMasterclass
             .filter(
@@ -216,7 +216,7 @@ export default function Search({ isOnline }) {
               </li>
             ))}
         </ul>
-      </div>
+      </section>
     </div>
   );
 }

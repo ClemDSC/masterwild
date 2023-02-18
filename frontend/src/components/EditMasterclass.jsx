@@ -79,6 +79,7 @@ export default function EditMasterclass({
       <form className="form-masterclass" onSubmit={editMasterclass}>
         <label htmlFor="title" className="labelTitle">
           <input
+            id="title"
             className="i-title"
             type="text"
             name="title"
@@ -91,6 +92,7 @@ export default function EditMasterclass({
         </label>
         <label htmlFor="name">
           <input
+            id="name"
             className="input"
             type="text"
             name="name"
@@ -103,6 +105,7 @@ export default function EditMasterclass({
         </label>
         <label htmlFor="source">
           <input
+            id="source"
             className="input"
             type="text"
             name="source"
@@ -115,6 +118,7 @@ export default function EditMasterclass({
         </label>
         <label htmlFor="category">
           <input
+            id="category"
             className="input"
             type="text"
             name="category"
@@ -127,6 +131,7 @@ export default function EditMasterclass({
         </label>
         <label htmlFor="keyword">
           <input
+            id="keyword"
             className="input"
             type="text"
             name="keyword"
@@ -139,6 +144,7 @@ export default function EditMasterclass({
         </label>
         <label className="desc" htmlFor="description">
           <textarea
+            id="description"
             className="i-desc"
             type="text"
             name="description"

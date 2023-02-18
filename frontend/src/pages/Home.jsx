@@ -46,12 +46,12 @@ export default function Home() {
       <div className="carousel-home">
         <CarouselHome />
       </div>
-      <div className="home-mosaic">
+      <section className="home-mosaic">
         {mobileVersionLogo.map((logo) => (
           <img className="square-pic" src={logo.src} alt={logo.alt} />
         ))}
-      </div>
-      <div className="video-sample-area">
+      </section>
+      <section className="video-sample-area">
         <div className="video-sample">
           <iframe
             className="iframeHome"
@@ -90,8 +90,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="search-exemples">
+      </section>
+      <section className="search-exemples">
         <div className="first-block">
           <h2>Découvrez de nombreux métiers ...</h2>
           <ul className="carousel-items">
@@ -120,7 +120,7 @@ export default function Home() {
             ))}
           </ul>
         </div>
-      </div>
+      </section>
       <IntroWCS />
     </div>
   );

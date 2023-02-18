@@ -24,24 +24,26 @@ export default function AdminMasterclass() {
 
   return (
     <div className="admin-masterclass">
-      <p className="p-action-masterclass">
+      <h4 className="p-action-masterclass">
         <span className="span-action-m">Modifier</span> ou{" "}
         <span className="span-action-m">Supprimer</span> une masterclass :
-      </p>
+      </h4>
       <section className="showMasterclass">
-        <select
-          name="showMasterclass"
-          id="showMasterclass"
-          onChange={handleFilter}
-          className="selectmaster"
-        >
-          <option value="">Selectionne la Masterclass</option>
-          {showMasterclass.map((masterclass) => (
-            <option value={masterclass.title} key={masterclass.Id}>
-              {masterclass.title}
-            </option>
-          ))}
-        </select>
+        <label className="label-edit-masterclass" htmlFor="showMasterclass">
+          <select
+            name="showMasterclass"
+            id="showMasterclass"
+            onChange={handleFilter}
+            className="selectmaster"
+          >
+            <option value="">Selectionne la Masterclass</option>
+            {showMasterclass.map((masterclass) => (
+              <option value={masterclass.title} key={masterclass.Id}>
+                {masterclass.title}
+              </option>
+            ))}
+          </select>
+        </label>
         {showMasterclass
           .filter((filtered) => filtered.title === filterMasterclass)
           .map((elem) => (
@@ -60,9 +62,9 @@ export default function AdminMasterclass() {
             </div>
           ))}
       </section>
-      <p className="p-action-masterclass">
+      <h4 className="p-action-masterclass">
         <span className="span-action-m">Ajouter</span> une masterclass :
-      </p>
+      </h4>
       <section className="add-masterclass">
         <AddMasterclass />
       </section>

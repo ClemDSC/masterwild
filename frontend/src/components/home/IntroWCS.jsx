@@ -2,7 +2,7 @@ import Monitor from "../../assets/pictures/homepage/monitor.jpg";
 
 export default function IntroWCS() {
   return (
-    <div className="down-page">
+    <section className="down-page">
       <h3 className="info-wsc">Qui sommes-nous ?</h3>
       <div className="intro-wsc">
         <div>
@@ -40,6 +40,6 @@ export default function IntroWCS() {
 
         <img className="picIntro-wsc" src={Monitor} alt="monitor" />
       </div>
-    </div>
+    </section>
   );
 }

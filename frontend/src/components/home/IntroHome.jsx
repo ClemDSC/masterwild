@@ -7,7 +7,7 @@ export default function IntroHome() {
   const { userProfil } = useContext(CurrentUserContext);
 
   return (
-    <div className="top-page">
+    <section className="top-page">
       <h2 className="info-top">
         Toutes les <span className="accent">masterclasses</span> de la Wild Code
         School,
@@ -50,6 +50,6 @@ export default function IntroHome() {
           </NavLink>
         )}
       </div>
-    </div>
+    </section>
   );
 }

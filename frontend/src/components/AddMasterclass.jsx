@@ -59,6 +59,7 @@ export default function AddMasterclass() {
       <form className="formAdd-masterclass" onSubmit={handlePost}>
         <label className="labelTitle" htmlFor="title">
           <input
+            id="title"
             className="i-title"
             type="text"
             name="title"
@@ -71,6 +72,7 @@ export default function AddMasterclass() {
         </label>
         <label htmlFor="name">
           <input
+            id="name"
             className="input"
             type="text"
             name="name"
@@ -83,6 +85,7 @@ export default function AddMasterclass() {
         </label>
         <label htmlFor="speciality">
           <input
+            id="speciality"
             className="input"
             type="text"
             name="speciality"
@@ -95,6 +98,7 @@ export default function AddMasterclass() {
         </label>
         <label htmlFor="source">
           <input
+            id="source"
             className="input"
             type="url"
             name="source"
@@ -107,6 +111,7 @@ export default function AddMasterclass() {
         </label>
         <label htmlFor="category">
           <input
+            id="category"
             className="input"
             type="text"
             name="category"
@@ -119,6 +124,7 @@ export default function AddMasterclass() {
         </label>
         <label htmlFor="keyword">
           <input
+            id="keyword"
             className="input"
             type="text"
             name="keyword"
@@ -131,6 +137,7 @@ export default function AddMasterclass() {
         </label>
         <label htmlFor="logo_source">
           <input
+            id="logo_source"
             onChange={(e) => setPhoto(e.target.files)}
             className="input"
             type="file"
@@ -142,6 +149,7 @@ export default function AddMasterclass() {
             className="i-desc"
             type="text"
             name="description"
+            id="description"
             onChange={(e) => setDesc(e.target.value)}
             placeholder="Description de la masterclass"
             maxLength="2500"
@@ -149,7 +157,7 @@ export default function AddMasterclass() {
             pattern="[@_$*€£`+=/;#]+"
           />
         </label>
-        <input className="btnPostMasterclass" type="submit" />
+        <input className="btnPostMasterclass" type="submit" value="Envoyer" />
         <ToastContainer
           position="bottom-right"
           autoClose={4000}

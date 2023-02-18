@@ -10,11 +10,15 @@ import Linkedin from "../assets/pictures/linkedin.png";
 
 export default function Footer() {
   return (
-    <div className="container-footer">
+    <section className="container-footer">
       <div className="footer">
         <div className="divLogoFooter">
           <NavLink className="linkFooter" to="/">
-            <img className="logoFooter" src={Logo} alt="logo aspiraction" />
+            <img
+              className="logoFooter"
+              src={Logo}
+              alt="logo red wild code school"
+            />
           </NavLink>
         </div>
         <div className="linkwsc">
@@ -124,6 +128,6 @@ export default function Footer() {
           droits réservés
         </p>
       </div>
-    </div>
+    </section>
   );
 }

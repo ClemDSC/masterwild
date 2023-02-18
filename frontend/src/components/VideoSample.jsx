@@ -113,7 +113,7 @@ export default function VideoSample({
 
             <div className="text">
               <div className="text-top">
-                <h1 className="title-video">{masterclass.title}</h1>
+                <h2 className="title-video">{masterclass.title}</h2>
               </div>
               <p className="text-bottom">{masterclass.description}</p>
             </div>

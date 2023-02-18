@@ -40,28 +40,30 @@ export default function ListFAQ() {
   ];
 
   return (
-    <div className="popularQuestions">
-      <p className="pfaq">La réponse à toutes vos questions est ici !</p>
-      <select className="selectQuestions" onChange={handleChange}>
-        <option value="">---</option>
-        <option value="1">À qui s'adresse Wild Masterclass ?</option>
-        <option value="2">
-          Quelle est la différence avec une formation en ligne ?
-        </option>
-        <option value="3">Dois-je payer pour accéder aux contenus ?</option>
-        <option value="4">Combien de temps dure une Masterclass ?</option>
-        <option value="5">Qui anime les Masterclass ?</option>
-        <option value="6">
-          Je découvre l'univers de la tech, j'envisage de m'orienter ou me
-          reconvertir dans la tech et les Masterclass ont confirmé mon projet.
-          Comment faire pour me former ??
-        </option>
-      </select>
+    <section className="popularQuestions">
+      <h3 className="pfaq">La réponse à toutes vos questions est ici !</h3>
+      <label className="label-faq" htmlFor="faq">
+        <select className="selectQuestions" onChange={handleChange} id="faq">
+          <option value="">---</option>
+          <option value="1">À qui s'adresse Wild Masterclass ?</option>
+          <option value="2">
+            Quelle est la différence avec une formation en ligne ?
+          </option>
+          <option value="3">Dois-je payer pour accéder aux contenus ?</option>
+          <option value="4">Combien de temps dure une Masterclass ?</option>
+          <option value="5">Qui anime les Masterclass ?</option>
+          <option value="6">
+            Je découvre l'univers de la tech, j'envisage de m'orienter ou me
+            reconvertir dans la tech et les Masterclass ont confirmé mon projet.
+            Comment faire pour me former ??
+          </option>
+        </select>
+      </label>
       {answersFaq
         .filter((resp) => resp.id === selectedOption)
         .map((resp) => (
           <AnswerDiv key={resp.id} resp={resp.answer} />
         ))}
-    </div>
+    </section>
   );
 }

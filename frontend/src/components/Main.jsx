@@ -44,10 +44,6 @@ export default function Main() {
             <Route path="abonne" element={<AdminAbonne />} />
             <Route path="editmasterclass" element={<AdminMasterclass />} />
           </Route>
-
-          {/* <Route path="/403" element={<InvalidPage />} />
-          <Route path="/connexion" element={<Connexion />} />
-        <Route path="/inscription" element={<Inscription />} /> */}
         </Routes>
       </Wrapper>
     </div>

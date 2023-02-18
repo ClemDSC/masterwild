@@ -9,8 +9,8 @@ export default function MyMCFavoritesList() {
   const { userProfil } = useContext(CurrentUserContext);
 
   return (
-    <div className="show-favorite-videos">
-      {userProfil.favorites ? (
+    <section className="show-favorite-videos">
+      {userProfil.favorites.length !== 0 ? (
         userProfil.favorites.map((favorite) => (
           <VideoSample
             addButton
@@ -19,8 +19,8 @@ export default function MyMCFavoritesList() {
           />
         ))
       ) : (
-        <p>Votre liste de favori est vide.</p>
+        <p>Oops! La liste de vos favoris est vide.</p>
       )}
-    </div>
+    </section>
   );
 }

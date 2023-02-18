@@ -53,7 +53,7 @@ export default function CarouselHome() {
   }, [showArrows]);
 
   return (
-    <div style={{ width: "80%", height: "250px", margin: "20px auto" }}>
+    <section style={{ width: "80%", height: "250px", margin: "20px auto" }}>
       <Carousel
         className="carousel-style"
         slides={slides}
@@ -62,6 +62,6 @@ export default function CarouselHome() {
         showNavigation={showArrows}
         animationConfig={state.config}
       />
-    </div>
+    </section>
   );
 }

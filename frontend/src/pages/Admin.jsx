@@ -63,21 +63,21 @@ export default function Admin({ isAdmin }) {
         </h2>
       </section>
       <section className="dashboard">
-        <p className="text-dashboard">
+        <h3 className="text-dashboard">
           <span className="span-number">{usersQuantity.length}</span>
           <br />
           Utilisateurs
-        </p>
-        <p className="text-dashboard">
+        </h3>
+        <h3 className="text-dashboard">
           <span className="span-number">{employeQuantity.length}</span>
           <br />
           Professionnels
-        </p>
-        <p className="text-dashboard text-masterclass">
+        </h3>
+        <h3 className="text-dashboard text-masterclass">
           <span className="span-number">{masterclassQuantity}</span>
           <br />
           Masterclass
-        </p>
+        </h3>
       </section>
       <section className="selectTask">
         <div className="select-clients">

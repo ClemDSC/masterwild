@@ -127,7 +127,9 @@ export default function Header() {
             </BurgerMenu>
           </div>
           <NavLink className="logo-header" to="/">
-            <img src={Logo} alt="logowhite" />
+            <h1>
+              <img src={Logo} alt="logowhite" />
+            </h1>
           </NavLink>
           {userProfil?.role && (
             <div className="menu-right">
@@ -135,7 +137,7 @@ export default function Header() {
                 <img
                   className="menu-right-icon"
                   src={UserProfile}
-                  alt="logowhite"
+                  alt="wild code school white logo"
                 />
               </NavLink>
               <button

@@ -33,7 +33,7 @@ export default function Masterclass({ isOnline }) {
     <div className="masterclass">
       <div className="container-masterclass">
         <VideoSample masterclassId={paramMasterId} addVideo />
-        <div className="suggestions">
+        <section className="suggestions">
           <ul className="carousel-items">
             {listMasterclass?.map((mastercard) => (
               <li className="carousel-item" key={mastercard.Id}>
@@ -41,7 +41,7 @@ export default function Masterclass({ isOnline }) {
               </li>
             ))}
           </ul>
-        </div>
+        </section>
       </div>
       <div className="go-to-search">
         <NavLink to="/search" className="global-return-button">
