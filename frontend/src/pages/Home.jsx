@@ -93,11 +93,12 @@ export default function Home() {
       </section>
       <section className="search-exemples">
         <div className="first-block">
-          <h2>Découvrez de nombreux métiers ...</h2>
+          <h2>Découvrez de nombreux domaines technologiques ...</h2>
           <ul className="carousel-items">
             {listMasterclass
               .filter(
-                (mastercard) => mastercard.entreprise.speciality === "Solutions"
+                (mastercard) =>
+                  mastercard.entreprise.name !== "Wild Code School"
               )
               .map((mastercard) => (
                 <li className="carousel-item" key={mastercard.Id}>
@@ -111,13 +112,21 @@ export default function Home() {
         </div>
 
         <div className="second-block">
-          <h2>... et différents domaines technologiques.</h2>
+          <h2>... ainsi que nos "Wild Talk" !</h2>
           <ul className="carousel-items">
-            {listMasterclass.map((mastercard) => (
-              <li className="carousel-item" key={mastercard.Id}>
-                <CardMasterclass key={mastercard.Id} mastercard={mastercard} />
-              </li>
-            ))}
+            {listMasterclass
+              .filter(
+                (mastercard) =>
+                  mastercard.entreprise.name === "Wild Code School"
+              )
+              .map((mastercard) => (
+                <li className="carousel-item" key={mastercard.Id}>
+                  <CardMasterclass
+                    key={mastercard.Id}
+                    mastercard={mastercard}
+                  />
+                </li>
+              ))}
           </ul>
         </div>
       </section>

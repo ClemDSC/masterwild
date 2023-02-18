@@ -215,7 +215,7 @@ export default function Search({ isOnline }) {
                 mastercard.entreprise.speciality
                   .toLowerCase()
                   .includes(filterSearch) ||
-                mastercard.category.name.toLowerCase().includes(filterSearch)
+                mastercard.category.name.includes(filterSearch)
             )
             .map((mastercard) => (
               <li className="testli" key={mastercard.Id}>
