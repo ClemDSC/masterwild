@@ -203,12 +203,19 @@ export default function Search({ isOnline }) {
             .filter(
               (mastercard) =>
                 mastercard.keywords
-                  .map((toto) => toto.keyword.name)
+                  .map((toto) => toto.keyword.name.toLowerCase())
                   .includes(filterSearch) ||
-                mastercard.entreprise.name.includes(filterSearch) ||
-                mastercard.category.name.includes(filterSearch) ||
-                mastercard.entreprise.name.includes(filterSearch) ||
-                mastercard.category.name.includes(filterSearch)
+                mastercard.entreprise.name
+                  .toLowerCase()
+                  .includes(filterSearch) ||
+                mastercard.category.name.toLowerCase().includes(filterSearch) ||
+                mastercard.entreprise.name
+                  .toLowerCase()
+                  .includes(filterSearch) ||
+                mastercard.entreprise.speciality
+                  .toLowerCase()
+                  .includes(filterSearch) ||
+                mastercard.category.name.toLowerCase().includes(filterSearch)
             )
             .map((mastercard) => (
               <li className="testli" key={mastercard.Id}>
